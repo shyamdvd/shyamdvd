@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyEstate</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&family=Noto+Sans+JP:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f5bad278eb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+<style>
+ #footer { width: 100%;}
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo1" src="img/Logo1.png">
+        <nav class="tlinks">
+            <a href="home.html" class="navbar"><b>Home</b></a>
+            <a href="buy.html" class="navbar">Buy</a>
+            <a href="sell.html" class="navbar">Sell</a>
+            <a href="rent.html" class="navbar">Rent</a>
+            <a href="postads.html" class="navbar">Post Ads</a>
+            <i class="far fa-user" class="i1"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fas fa-search" class="i2"></i>
+        </nav>
+    </header>
+    <div class="form_top"> Set Your Property Alert - Get matching properties in your mail box </div>
+
+    <div class="form">
+        <form method="POST" action="reg.php">
+            <div>
+                <p style="color: grey;">Set new property alerts</p>
+                <div class="lookfor">
+                    &nbsp;&nbsp;&nbsp;<input type="radio" value="r1" name="r1"> Commercial <br><br>
+                </div>
+                <div class="wish">
+                    <span class="red">*</span>I wish to: <input type="radio" name="r1">&nbsp;Buy &nbsp;&nbsp;&nbsp;<input
+                        type="radio" value="r1" name="r1">&nbsp; Rent&nbsp;&nbsp;<input type="radio" value="r1" name="r1">&nbsp; PG
+                </div>
+                <br>
+                <p> Property type:</p>
+                <div class="srow"><input type="checkbox" name="c1" attr="Residential Apartment">&nbsp;Residential
+                    Apartment &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="c1" attr="Independent House/Villa">&nbsp;Independent House/Villa
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    <input type="checkbox" name="c1" attr="Residential Land">&nbsp;Residential Land
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="c1" attr="Farm House">&nbsp;Farm House
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="c1" attr="Studio Apartment">&nbsp;Studio Apartment <br>
+                    <input type="checkbox" name="c1" attr="Independent Builder">&nbsp;Independent Builder
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="c1" attr="Serviced Apartment">&nbsp;Serviced Apartment<br>
+                </div>
+                <br><br>
+                <p class="red">Atleast one property type is required</p>
+                <br>
+                <div class="budget">
+                    <span class="red">*</span>Budget Preference:
+                    <select>
+                        <option>Min</option>
+                    </select> &nbsp;&nbsp; To &nbsp;&nbsp;
+                    <select>
+                        <option>Max</option>
+                    </select>
+                </div>
+                <br><br>
+                <span class="red">*</span>Choose Location: &nbsp; <input class="txtarea"
+                type="textarea" placeholder="Enter localities" style="height: 60px; width: 400px;"> <br><br>
+                Bedrooms: <Select> 
+                <option>Bedrooms</option>
+                    </Select>
+                    <br><br>
+                    Sale Type: <Input type="checkbox" name="c1">&nbsp;Resale &nbsp; &nbsp; &nbsp; <Input type="checkbox" name="c1">&nbsp;New Booking
+                        <br><br>
+                <p style="color: grey;">Alert Preference</p>
+                <br>                     
+                        <span class="red">*</span>Alert Frequency: 
+                        <input type="radio" name="r2">&nbsp;Daily
+                        <input type="radio" name="r2">&nbsp;Weekly
+                        <input type="radio" name="r2">&nbsp;Twice a Month
+                        <br><br>
+                        Your alert: <input class="txtarea"
+                        type="textarea" style="height: 60px; width: 400px;" !important> <br> <br>
+                        Bedrooms: <Select><option>1 bedroom</option><option>2 bedroom</option> </Select>
+                            <br><br>
+                            <span class="red">*</span>Name: 
+                            <input class="plchldr" type="text" placeholder="Name*">
+                            <br><br>
+                            <span class="red">*</span>Email:
+                            <input class="plchldr" type="text" placeholder="Email*">
+                            <br><br>
+                            <input class="submit2" type="submit" value="Set my email alert">
+        </form>
+    </div>
+</div>
+<div id="footer" class="f1">
+
+    <div class="list1">
+        <ul>
+            <li> <a href="postads.html" class="footlinks">Locations</a></li>
+            <li> <a href="rent.html" class="footlinks">Developers</a></li>
+            <li><a href="home.html" class="footlinks">Hot Zones</a></li>
+            <li> <a href="sell.html" class="footlinks">Sold</a></li>
+        </ul>
+    </div>
+    <div class="list1" id="box2">
+        <ul>
+            <li> <a href="buy.html" class="footlinks">Buy</a></li>
+            <li> <a href="rent.html" class="footlinks">Sell</a></li>
+            <li><a href="rent.html" class="footlinks">Rent</a></li>
+            <li> <a href="#" class="footlinks"></a></li>
+        </ul>
+    </div>
+    <div class="list2">
+        <input type="text" placeholder="subscribe" class="sub">
+        <input type="button" class="subtn" value="submit">
+    </div>
+</div>
+<div class="f2">
+    <div class="bottomlinks">
+       <a href="https://twitter.com/"> <i class="fab fa-twitter" id="twitt" ></i></a>
+     <a href="https://facebook.com">   <i class="fab fa-facebook" id="face" ></i></a>
+      <a href="https://web.whatsapp.com">  <i class="fab fa-whatsapp" id="what"></i></a>
+          <a href="https://pinterest.com"> <i class="fab fa-pinterest" id="pin"></i></a>
+    </div>
+    <div class="f2_text">
+        <p class="para"><span style="color: #00A170"> &copy; Mr.Dwivedi Designs</span></p>
+    </div>
+    <div class="f2_top">
+        <a href="#top">
+            <i class="fas fa-arrow-circle-up" id="gototop"></i>
+        </a>
+    </div>
+</div>
+</body>
+
+
+</html>
+
+
